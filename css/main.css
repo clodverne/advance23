@@ -1,0 +1,134 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  -webkit-animation-name: anim-color;
+  -moz-animation-name: anim-color;
+  -o-animation-name: anim-color;
+  animation-name: anim-color;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -moz-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -o-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  -o-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-animation: anim-color 2s easy 1s infinity reverse;
+  -moz-animation: anim-color 2s easy 1s infinity reverse;
+  -o-animation: anim-color 2s easy 1s infinity reverse;
+  animation: anim-color 2s easy 1s infinity reverse;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-color {
+  0% {
+    background-color: gray;
+    margin-left: 0;
+  }
+
+  to {
+    background-color: purple;
+    margin-left: 400px;
+  }
+}
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+button,
+input,
+textarea {
+  outline: 0;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+}
+
+.form {
+  z-index: 2;
+  display: inline-block;
+  position: absolute;
+  background-color: #4d59a1;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form form {
+  padding: 4rem;
+  font-family: 'Lato',sans-serif;
+  font-style: italic;
+}
+
+.form form input {
+  margin-bottom: 1rem;
+}
+
+.form form textarea {
+  font-size: 1rem;
+  color: #b9b9b9;
+  margin-bottom: 1rem;
+}
+
+.form form button {
+  width: 55%;
+  border-style: none;
+  background-color: #c3f37f;
+  padding: 2rem;
+  border-radius: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+.form h2 {
+  font-family: 'ChunkFive Roman',arial;
+  font-size: 6rem;
+  color: #fff;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+.email,
+.form form textarea,
+.where {
+  width: 100%;
+  border-style: none;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.where {
+  width: 48%;
+}
+
+.where1 {
+  float: left;
+}
+
+.where2 {
+  float: right;
+}
